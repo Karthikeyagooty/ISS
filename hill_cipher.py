@@ -15,7 +15,7 @@ def matrix_inverse(key_matrix):
             det_inv = i
             break
     if det_inv is None:
-        raise ValueError("Key matrix is not invertible modulo 26")
+        raise ValueError("Key matrix is not invertible modulo 26 ")
 
     adjugate = [[d, (-b) % 26], [(-c) % 26, a]]
     inverse = []
