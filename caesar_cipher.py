@@ -18,14 +18,14 @@ def encrypt(text, shift):
 def decrypt(text, shift):
     return caesar_cipher(text, -shift)
 
-# Example usage
+# User input and execution
 if __name__ == "__main__":
-    plaintext = "Hello, World!"
-    shift = 3
+    text = input("Enter the text: ")
+    shift = int(input("Enter the shift value: "))
 
-    encrypted = encrypt(plaintext, shift)
+    encrypted = encrypt(text, shift)
     decrypted = decrypt(encrypted, shift)
 
-    print("Original:", plaintext)
-    print("Encrypted:", encrypted)
-    print("Decrypted:", decrypted)
+    print("\nOriginal Text:", text)
+    print("Encrypted Text:", encrypted)
+    print("Decrypted Text:", decrypted)
