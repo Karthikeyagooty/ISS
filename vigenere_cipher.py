@@ -35,15 +35,13 @@ def decrypt_vigenere(msg, key):
         decrypted_text.append(decrypted_char)
     return "".join(decrypted_text)
 
-# Example usage
-text_to_encrypt = "Hello, World!"
-key = "KEY"
 
-encrypted_text = encrypt_vigenere(text_to_encrypt, key)
-print(f"Encrypted Text: {encrypted_text}")
+if __name__ == "__main__":
+    text_to_encrypt = input("Enter the text: ")
+    key = input("Enter the key: ")
 
-decrypted_text = decrypt_vigenere(encrypted_text, key)
-print(f"Decrypted Text: {decrypted_text}")
-
-#previous code was only support the upper case letters
-#this code can be apply on both
+    encrypted_text = encrypt_vigenere(text_to_encrypt, key)
+    print(f"Encrypted Text: {encrypted_text}")
+    
+    decrypted_text = decrypt_vigenere(encrypted_text, key)
+    print(f"Decrypted Text: {decrypted_text}")
