@@ -96,4 +96,3 @@ if __name__ == "__main__":
         print("2. Decrypt a text")
         print("3. Exit")
         n=int(input())
-        
